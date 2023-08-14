@@ -1,0 +1,84 @@
+.todo_list_container {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 800px;
+  background-color: white;
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.todo_list_title {
+  margin: 10px;
+  padding: 30px;
+}
+
+.todo_list_title h1 {
+  font-size: 20px;
+  color: #343a40;
+  font-weight: bold;
+}
+
+.day {
+  margin-top: 20px;
+  color: #868e96;
+  font-size: 18px;
+}
+
+.todo_list_input_wrapper {
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.todo_list_form {
+  height: 100%;
+}
+
+.todo_list_input {
+  width: 80%;
+  height: 100%;
+  padding: 0 30px;
+  border: 1px solid #ced4da;
+  border-radius: 15px;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+.todo_list_item_wrapper {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  padding: 20px 0;
+  border-top: 1px solid lightgray;
+}
+.todo_list_items {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px 30px;
+}
+.todo_list_items_checkbox {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  border: 1px solid #ced4da;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  cursor: pointer;
+  /* 클릭했을 때
+  border: 1px solid #38d9a9;
+  color: #38d9a9; */
+}
+.todo_lisst_items_textbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* 클릭했을 때
+  border: 1px solid #38d9a9;
+  color: #38d9a9; */
+}
