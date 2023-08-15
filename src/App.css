@@ -25,6 +25,7 @@
   margin-top: 20px;
   color: #868e96;
   font-size: 18px;
+  cursor: pointer;
 }
 
 .todo_list_input_wrapper {
@@ -33,6 +34,7 @@
 }
 
 .todo_list_form {
+  position: relative;
   height: 100%;
 }
 
@@ -47,10 +49,19 @@
   font-size: 20px;
 }
 
+.search_icon {
+  background-color: white;
+  border: none;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
 .todo_list_item_wrapper {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   padding: 20px 0;
   border-top: 1px solid lightgray;
 }
@@ -59,6 +70,18 @@
   justify-content: flex-start;
   padding: 10px 30px;
 }
+
+.todo_list_items:hover .amend_list_items {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: end;
+  color: #868e96;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+}
+
 .todo_list_items_checkbox {
   width: 32px;
   height: 32px;
@@ -74,11 +97,15 @@
   border: 1px solid #38d9a9;
   color: #38d9a9; */
 }
-.todo_lisst_items_textbox {
+.todo_list_items_textbox {
   display: flex;
   align-items: center;
   justify-content: center;
   /* 클릭했을 때
   border: 1px solid #38d9a9;
   color: #38d9a9; */
+}
+
+.amend_list_items {
+  display: none;
 }
